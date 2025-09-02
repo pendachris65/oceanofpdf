@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header>
+      <header>
 
          <div class="content">
 
@@ -26,15 +26,18 @@
   
          </div>
 
-
-          <input type="text" placeholder="Search for books"/>
+          <div class="search-box">
+             <span class="search-icon">&#128269;</span>
+             <input type="text" placeholder="Search for books"/>
+          </div>
+        
 
          <div class="actions">
              <button class="sign-in">Sign-in</button>
              <button class="sign-up">Sign-up</button>
          </div>
 
-    </header>
+      </header>
 
 
     
@@ -109,7 +112,7 @@
 
                     <div class="contents">
                         <div class="content-title">
-                            <h2>Discover the Benefits of OceanofPDF</h2>
+                            <h1>Discover the Benefits of OceanofPDF</h1>
                             <p>Experience the ultimate convenience with high-quality PDFs at your fingertips.
                               Our vast collection ensures you find exactly what you need.
                             </p>
@@ -120,12 +123,14 @@
                         <div class="features">
 
                             <div class="feature">
+                                <img src="images/icon.png" alt="icon">
                                 <h3 class="feature-title">Quality PDFs</h3>
                                 <p>Enjoy crystal-clear, high-resolution PDFs for an immersive reading experience.</p>
                             </div>
 
 
                             <div class="feature">
+                                <img src="images/icon.png" alt="">
                                 <h3 class="feature-title">Vast Collection</h3>
                                 <p>Browse thousands of titles across various genres and topics.</p>
                             </div>
@@ -160,7 +165,9 @@
 
              <div class="steps">
                  <div class="step">
-                     <img src="images/book icon.png" alt="Browse library icon" />
+                     <div class="step-icon">
+                         <img src="images/browse icon.png" alt="Browse library icon" />
+                     </div>
 
                      <div class="step-description">
                          <h3>Step 1: Browse Our Extensive Library</h3>
@@ -171,7 +178,9 @@
 
 
                  <div class="step">
-                     <img src="images/download icon.png" alt="Select book icon" />
+                     <div class="step-icon">
+                         <img src="images/select book icon.png" alt="Select book icon" />
+                     </div>
 
                      <div class="step-description">
                            <h3>Step 2: Select Your Desired Book</h3>
@@ -181,7 +190,9 @@
                  </div>
 
                  <div class="step">
-                     <img src="images/Placeholder Image.svg" alt="Download icon" />
+                      <div class="step-icon">
+                         <img src="images/download.png" alt="Download icon" />
+                      </div>
 
                      <div class="step-description">
                           <h3>Step 3: Download Your Chosen Book</h3>
@@ -264,7 +275,7 @@
                      <h3>How to download books?</h3>
 
                      <button class="faq-button">
-                         <img src="images/Vector.png" alt="icon">
+                         <img src="images/arrow.png" alt="icon">
                      </button>
                  </div>
 
@@ -277,11 +288,11 @@
                      <h3>Is account creation necessary?</h3>
 
                      <button class="faq-button">
-                         <img src="images/Vector.png" alt="icon">
+                         <img src="images/arrow.png" alt="icon">
                      </button>
                  </div>
 
-                 <p>Yes, creating an account is necessary to access your downloaded books. 
+                 <p class="answer">Yes, creating an account is necessary to access your downloaded books. 
                     It allows you to manage your library and track your purchases. Registration is quick and easy.</p>
              </div>
 
@@ -290,11 +301,11 @@
                      <h3>What payment method accepted?</h3>
 
                      <button class="faq-button">
-                         <img src="images/Vector.png" alt="icon">
+                         <img src="images/arrow.png" alt="icon">
                      </button>
                  </div>
             
-                 <p>We accept various payment methods including credit cards and PayPal.
+                 <p class="answer">We accept various payment methods including credit cards and PayPal.
                      This ensures a secure transaction for your purchases. Choose the method that suits you best at checkout.</p>
              </div>
 
@@ -303,11 +314,11 @@
                      <h3>Can i return books?</h3>
 
                      <button class="faq-button">
-                         <img src="images/Vector.png" alt="icon">
+                         <img src="images/arrow.png" alt="icon">
                      </button>
                  </div>
 
-                 <p>Due to the nature of digital downloads, we do not accept returns.
+                 <p class="answer">Due to the nature of digital downloads, we do not accept returns.
                      However, if you experience issues with a download, please contact our support team.
                       We are here to help resolve any problems.</p>
              </div>
@@ -317,10 +328,10 @@
                      <h3>How to reset password?</h3>
 
                      <button class="faq-button">
-                         <img src="images/Vector.png" alt="icon">
+                         <img src="images/arrow.png" alt="icon">
                      </button>
                  </div>  
-                 <p>To reset your password, click on the “Forgot Password?” link on the login page.
+                 <p class="answer">To reset your password, click on the “Forgot Password?” link on the login page.
                      Follow the instructions sent to your email. You'll be able to create a new password securely.</p>
              </div>
              
@@ -347,12 +358,82 @@
      </section>
 
 
+     <footer class="footer">
+
+         <div class="footer-container">
+             <div class="footer-column">
+                 <h3>OceanofPDF</h3>
+                 <p>Subscribe to our newsletter for the latest features and updates on releases.</p>
+
+                 <form class="form">
+                     <input type="email" placeholder="Your email here" required>
+                     <button type="submit">Join</button>
+                 </form>
+
+                 <small>By subscribing, you consent to our Privacy Policy and receiving updates.</small>
+             </div>
+
+             <div class="link-container">
+
+                
+                  <div class="footer-links">
+                     <h4>Quick Links</h4>
+
+                     <ul>
+                         <li><a href="#">Home Page</a></li>
+                         <li><a href="#">About Us</a></li>
+                         <li><a href="#">Contact Us</a></li>
+                         <li><a href="#">Support Center</a></li>
+                         <li><a href="#">FAQs</a></li>
+                     </ul>
+
+                  </div>
+
+                 <div class="footer-links">
+                     <h4>Connect With Us</h4>
+
+                     <ul>
+                         <li><a href="#">Blog Posts</a></li>
+                         <li><a href="#">Community</a></li>
+                         <li><a href="#">Events</a></li>
+                         <li><a href="#">Partnerships</a></li>
+                         <li><a href="#">Careers</a></li>
+                     </ul>
+                 </div>
+
+                 <div class="footer-links">
+                     <h4>Stay Connected</h4>
+
+                     <ul class="social-links">
+                         <li> <img src="images/facebook.png" alt="facebook"><a href="#">Facebook</a></li>
+                         <li> <img src="images/instagram.png" alt=""><a href="#">Instagram</a></li>
+                         <li> <img src="images/x.png" alt=""><a href="#">X</a></li>
+                         <li> <img src="images/linkedin.png" alt=""><a href="#">LinkedIn</a></li>
+                         <li> <img src="images/youtube.png" alt=""><a href="#">YouTube</a></li>
+                     </ul>
+                 </div>
+
+             </div>
 
 
+         </div>
 
+         <div class="footer-bottom">
 
+                 <div class="footer-row">
+                     <p>© 2025 OceanofPDF. All rights reserved.</p>
 
+                     <div class="footer-bottom-links">
+                         <a href="#">Privacy Policy</a>
+                         <a href="#">Terms of Use</a>
+                         <a href="#">Cookie Settings</a>
+                     </div>
+                 </div>
+            </div>
 
+     </footer>
+
+     <script src="script/script.js"></script>
     
 </body>
 </html>
