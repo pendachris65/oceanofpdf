@@ -15,7 +15,7 @@ header {
   width: 1440px;
   height: 72px;
   border-bottom-width: 1px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-right: 64px;
   padding-left: 64px;
   background-color:rgba(255, 255, 255, 1);
@@ -85,7 +85,9 @@ input {
   gap: 4px;
   margin-top: 15px;
   padding: 8px 12px 8px 32px;
-  border: 1px solid rgba(208, 213, 221, 1)
+  border: 1px solid rgba(208, 213, 221, 1);
+  background: rgba(240, 242, 245, 1);
+
 }
 
 
@@ -142,7 +144,7 @@ input {
 .text h1 {
   width: 555px;
   height: 231px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 64px;
@@ -171,6 +173,7 @@ input {
   padding-left: 24px;
   border-radius: 8px;
   background: rgba(37, 99, 235, 1);
+  color: var(--Color-White, rgba(255, 255, 255, 1));
 }
 
 .image {
@@ -219,7 +222,7 @@ input {
 .section-title p {
   width: 768px;
   height: 54px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -238,8 +241,8 @@ input {
 
 
 .book-card {
-  width: 286;
-  height: 428;
+  width: 286px;
+  height: 428px;
   gap: 16px;
   border-radius: 16px;
   padding: 16px;
@@ -251,13 +254,19 @@ input {
   height: 257px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-
 }
 
-.book-card button {
+.book-card-rating {
+  display: flex;
+  flex-direction: column;
+  width: 254px;
+  height: 119px;
+  gap: 16px;
+}
+
+.book-card-rating button {
   width: 254px;
   height: 40px;
-  margin-top: 30px;
   padding-top: 8px;
   padding-right: 12px;
   padding-bottom: 8px;
@@ -278,6 +287,7 @@ input {
   gap: 8px;
   border-radius: 8px;
   border-width: 1px;
+  background: rgba(211, 223, 251, 1);
 }
 
 .benefits-section {
@@ -820,12 +830,13 @@ input {
 .hero-column h1 {
   width: 768px;
   height: 58px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -1%;
+  color: var(--Color-White, rgba(255, 255, 255, 1));
 }
 
 .hero-column p {
@@ -989,7 +1000,7 @@ small {
 .footer-links h4 {
   width: 201.3333282470703px;
   height: 24px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 16px;
@@ -1014,7 +1025,7 @@ small {
 }
 
 .footer-links ul li a {
-  font-family: Inter;
+  font-family: "Inter" sans-serif;
   font-weight: 400;
   font-style: Regular;
   font-size: 14px;
@@ -1030,11 +1041,13 @@ small {
 }
 
 .social-links li {
+  display: flex;
+  flex-direction: row;
   width: 201.3333282470703px;
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
-  gap: 12px;
+  gap: 8px;
 }
 
 .social-links li img {
